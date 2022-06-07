@@ -41,7 +41,7 @@ public class SpawnManager : MonoBehaviour
         //To Choose an Animals Randomly From The Animal Prefabs Array
         int animalIndex = Random.Range(0, animalPrefabs.Length);
 
-        //Spawn Animals When Get Key S Button
+        //Spawn Animals
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
         Instantiate(animalPrefabs[animalIndex], spawnLeftPos, Quaternion.Euler(0,90,0));
         Instantiate(animalPrefabs[animalIndex], spawnRightPos, Quaternion.Euler(0, -90, 0));

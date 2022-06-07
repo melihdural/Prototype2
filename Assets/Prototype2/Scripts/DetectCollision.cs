@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
@@ -27,6 +28,7 @@ public class DetectCollision : MonoBehaviour
       if (ScoreCounter.life < 1)
       {
          Debug.Log("GameOver");
+         Destroy(GameObject.Find("Player"));
       }
       else
       {
